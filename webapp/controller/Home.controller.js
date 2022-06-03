@@ -40,7 +40,7 @@ sap.ui.define([
 
 		getStation: function () {
 			var oModel = this.getModel("Table");
-			fetch('https://www.radiorecord.ru/api/stations/').then((response) => {
+			fetch('http://localhost:5000/radio').then((response) => {
 				return response.json();
 			}).then((data) => {
 				oModel.setProperty("/radio", data.result.stations);
@@ -50,7 +50,7 @@ sap.ui.define([
 
 		getTrack: function () {
 			var oGetTrack = []
-			fetch('https://www.radiorecord.ru/api/stations/now').then((response) => {
+			fetch('http://localhost:5000/track').then((response) => {
 				return response.json();
 			}).then((data) => {
 				var oModel = this.getModel("Table");
