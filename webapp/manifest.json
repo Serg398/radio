@@ -64,11 +64,8 @@
 					],
 					"fallbackLocale": ""
 				}
-			},
-			"Model_Json" : {
-				"type": "sap.ui.model.json.JSONModel",
-				"uri": "model.json"
 			}
+			
 		},
 		
 		"resources": {
