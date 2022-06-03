@@ -1,0 +1,371 @@
+*:focus {
+    outline: none;
+}
+
+.sapMShellBrandingBar {
+    height: 0px;
+}
+
+.playerselement {
+    padding-left: 2rem;
+    width: 100%;
+    padding-top: 0.6rem;
+    position: fixed;
+}
+
+.playersPadding {
+    padding-left: 1rem;
+}
+
+.playersPaddingImage {
+    margin-top: -1.2rem;
+}
+
+.layout {
+    animation: layout 25s ease-in-out infinite;
+    background-image: url("https://s1.best-wallpaper.net/wallpaper/m/1901/Abstract-blue-background-purple-circles_m.jpg");
+    background-repeat: no-repeat;
+    padding-left: 3rem;
+    height: 5rem;
+}
+
+@media (max-width: 620px) {
+    .layout {
+        padding: 100px 20px;
+        font-size: 26px;
+    }
+}
+
+@keyframes layout {
+    0% {
+        background-size: 120%;
+        background-position: 50% 50%;
+    }
+
+    20% {
+        background-size: 150%;
+        background-position: 0 50%;
+    }
+
+    40% {
+        background-size: 110%;
+        background-position: 20% 80%;
+    }
+
+    60% {
+        background-size: 160%;
+        background-position: 60% 10%;
+    }
+
+    80% {
+        background-size: 120%;
+        background-position: 40% 70%;
+    }
+
+    100% {
+        background-size: 120%;
+        background-position: 50% 50%;
+    }
+}
+
+.textText {
+    font-size: large;
+    color: rgb(255, 255, 255);
+}
+
+.textLabel {
+    color: rgb(214, 214, 214);
+}
+
+.section {
+    margin-top: -5rem;
+}
+
+.items {
+    padding-top: 0.5%;
+}
+
+.sapMLIBFocusable:focus {
+    outline: none;
+}
+
+.sapMSliderHandle {
+    background: rgba(255, 255, 255, 0.993);
+    border: 0.125rem solid rgba(255, 255, 255, 0.993);
+    margin-left: -0.4rem;
+    margin-top: 0.5rem;
+    height: 0.75rem;
+    width: 0.75rem;
+    direction: ltr;
+    border-top-left-radius: 1rem;
+    border-top-right-radius: 1rem;
+    border-bottom-right-radius: 1rem;
+    border-bottom-left-radius: 1rem;
+}
+
+.sapMSliderHandle:hover {
+    background: rgba(255, 255, 255, 0.993);
+    border: 0.125rem solid rgba(255, 255, 255, 0.993);
+}
+
+.sapMSliderInner {
+    background: #7c7c7c6b;
+}
+
+.sapMSliderProgress {
+    background: rgba(255, 255, 255, 0.993);
+}
+
+.volume {
+    padding-top: 0.8rem;
+    padding-left: 4.5rem;
+    color: rgb(255, 255, 255);
+}
+
+.volumeSlider {
+    outline: none;
+    padding-top: 0.6rem;
+    padding-left: 3rem;
+    min-width: 10rem;
+}
+
+html.sap-desktop .sapMSliderHandle:focus {
+    outline: none;
+}
+
+.sapMSliderProgress:hover~.sapMSliderHandle {
+    background-color: rgb(255 255 255);
+    border: 0.125rem solid #ffffff;
+}
+
+.sapMSliderPressed:not(.sapMSliderInnerDisabled)>.sapMSliderHandle {
+    background-color: rgb(255, 255, 255);
+    border: 0.125rem solid #ffffff;
+}
+
+.bitrate {
+    padding-top: 0.8rem;
+    padding-left: 3.4rem;
+    color: rgb(255, 255, 255);
+}
+
+.bitratetext {
+    outline: none;
+    padding-top: 0.2rem;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    text-decoration: none !important;
+    transition: 0.3s linear;
+}
+
+.bitratetext:visited {
+    color: #9b9b9b;
+    outline: 0;
+}
+
+.bitratetext:hover {
+    background-color: #ffffff44;
+    color: #9b9b9b;
+    outline: 0;
+}
+
+.sapMLnk.bitratetext:focus {
+    color: #9b9b9b;
+    outline: none;
+}
+
+html.sap-desktop .sapMLnk:focus:not(.sapMLnkDsbl) {
+    outline: none;
+}
+
+.sapMLnk:hover:not(.sapMLnkDsbl) {
+    color: #9b9b9b;
+}
+
+.volumeValue {
+    padding-top: 1.4rem;
+    padding-left: 2rem;
+    color: rgba(255, 255, 255, 0.993);
+    padding-right: 1rem;
+    font-size: 200%;
+}
+
+.play {
+    position: relative;
+    height: 55px;
+    width: 55px;
+    border-radius: 78px;
+    border: 3px solid rgb(255, 255, 255);
+    left: 35%;
+    left: calc(50% - 42px);
+    left: -o-calc(50% - 42px);
+    left: -ms-calc(50% - 42px);
+    left: -webkit-calc(50% - 42px);
+    left: -moz-calc(50% - 42px);
+
+    transform-origin: 50% 50%;
+    -o-transform-origin: 50% 50%;
+    -ms-transform-origin: 50% 50%;
+    -webkit-transform-origin: 50% 50%;
+    -moz-transform-origin: 50% 50%;
+}
+
+.play:after {
+    content: "";
+    position: absolute;
+    top: -0px;
+    left: 19px;
+    width: 20px;
+    height: 20px;
+    border-radius: 10px;
+    background-color: rgb(0, 255, 55);
+}
+
+@keyframes play {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+@-o-keyframes play {
+    0% {
+        -o-transform: rotate(0deg);
+    }
+
+    100% {
+        -o-transform: rotate(360deg);
+    }
+}
+
+@-ms-keyframes play {
+    0% {
+        -ms-transform: rotate(0deg);
+    }
+
+    100% {
+        -ms-transform: rotate(360deg);
+    }
+}
+
+@-webkit-keyframes play {
+    0% {
+        -webkit-transform: rotate(0deg);
+    }
+
+    100% {
+        -webkit-transform: rotate(360deg);
+    }
+}
+
+@-moz-keyframes play {
+    0% {
+        -moz-transform: rotate(0deg);
+    }
+
+    100% {
+        -moz-transform: rotate(360deg);
+    }
+}
+
+.pause {
+    position: relative;
+    height: 55px;
+    width: 55px;
+    border-radius: 78px;
+    border: 3px solid rgb(255, 255, 255);
+    left: 35%;
+    left: calc(50% - 42px);
+    left: -o-calc(50% - 42px);
+    left: -ms-calc(50% - 42px);
+    left: -webkit-calc(50% - 42px);
+    left: -moz-calc(50% - 42px);
+
+    transform-origin: 50% 50%;
+    -o-transform-origin: 50% 50%;
+    -ms-transform-origin: 50% 50%;
+    -webkit-transform-origin: 50% 50%;
+    -moz-transform-origin: 50% 50%;
+    animation: pause 3.45s linear infinite;
+    -o-animation: pause 3.45s linear infinite;
+    -ms-animation: pause 3.45s linear infinite;
+    -webkit-animation: pause 3.45s linear infinite;
+    -moz-animation: pause 3.45s linear infinite;
+}
+
+.pause:after {
+    content: "";
+    position: absolute;
+    top: -0px;
+    left: 19px;
+    width: 20px;
+    height: 20px;
+    border-radius: 10px;
+    background-color: rgb(255, 0, 0);
+}
+
+@keyframes pause {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+@-o-keyframes pause {
+    0% {
+        -o-transform: rotate(0deg);
+    }
+
+    100% {
+        -o-transform: rotate(360deg);
+    }
+}
+
+@-ms-keyframes pause {
+    0% {
+        -ms-transform: rotate(0deg);
+    }
+
+    100% {
+        -ms-transform: rotate(360deg);
+    }
+}
+
+@-webkit-keyframes pause {
+    0% {
+        -webkit-transform: rotate(0deg);
+    }
+
+    100% {
+        -webkit-transform: rotate(360deg);
+    }
+}
+
+@-moz-keyframes pause {
+    0% {
+        -moz-transform: rotate(0deg);
+    }
+
+    100% {
+        -moz-transform: rotate(360deg);
+    }
+}
+
+.startvisible {
+    opacity: 0;
+    animation: startvisible 3s forwards;
+    
+}
+
+@keyframes startvisible {
+    0% {opacity: 0;}
+    50% {opacity: 50;}
+    100% {opacity: 100;}
+  }
+

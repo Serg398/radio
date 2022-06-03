@@ -1,0 +1,123 @@
+<mvc:View
+	controllerName="sap.ui.demo.basicTemplate.controller.Home"
+	xmlns:html="http://www.w3.org/1999/xhtml"
+	xmlns:t="sap.ui.table"
+	xmlns:uxap="sap.uxap"
+	xmlns:mvc="sap.ui.core.mvc"
+	xmlns="sap.m"
+	xmlns:l="sap.ui.layout"
+	xmlns:core="sap.ui.core"
+	xmlns:tnt="sap.tnt"
+	displayBlock="true">
+	<App>
+		<Page
+			id="Main"
+			showHeader="false"
+			enableScrolling="false">
+			<VBox
+				height="100%"
+				renderType="Bare">
+
+				<HBox class="layout">
+					<layoutData>
+						<FlexItemData shrinkFactor="0" />
+					</layoutData>
+					<HBox width="70%">
+						<HBox class="playerselement">
+							<HBox class="playersPadding">
+								<Link
+									id="iconplay"
+									class="play"
+									press="playerButton" />
+							</HBox>
+							<HBox>
+								<Image
+									class="playersPaddingImage"
+									src="{Table>/player/icon_fill_colored}"
+									width="100px" />
+							</HBox>
+							<HBox  class="playersPadding">
+								<VBox id="start" >
+									<Text
+										text="{Table>/player/title}"
+										class="textText" />
+									<Label
+										text="{Table>/player/artist}"
+										class="textLabel" />
+									<Label
+										text="{Table>/player/song}"
+										class="textLabel" />
+
+								</VBox>
+								<html:audio id="audioplayer" />
+							</HBox>
+						</HBox>
+					</HBox>
+					<HBox width="40%">
+						<VBox>
+							<Text
+								text="Bitrate:"
+								class="bitrate" />
+							<HBox>
+								<Link
+									id="stream_64"
+									text="64"
+									class="bitratetext"
+									press="stream64" />
+								<Link
+									id="stream_128"
+									text="128"
+									class="bitratetext"
+									press="stream128" />
+								<Link
+									id="stream_320"
+									text="320"
+									class="bitratetext"
+									press="stream320" />
+							</HBox>
+						</VBox>
+						<VBox>
+							<Text
+								text="Volume"
+								class="volume" />
+							<Slider
+								class="volumeSlider"
+								id="volume"
+								value="100"
+								liveChange="setVolume" />
+						</VBox>
+						<Text
+							class="volumeValue"
+							text="{Table>/volume}" />
+					</HBox>
+				</HBox>
+				<ScrollContainer vertical="true">
+					<layoutData>
+						<FlexItemData growFactor="1" />
+					</layoutData>
+					<List
+						id="ShortProductList"
+						items="{Table>/radio}">
+						<CustomListItem
+							type="Active"
+							press="playItem">
+							<HBox>
+								<Image
+									width="70px"
+									src="{Table>icon_gray}"
+									class="sapUiSmallMarginBegin" />
+								<VBox class="items">
+									<Title
+										text="{Table>title}"
+										class="bigFont" />
+									<Label text="{Table>artist}" />
+									<Label text="{Table>song}" />
+								</VBox>
+							</HBox>
+						</CustomListItem>
+					</List>
+				</ScrollContainer>
+			</VBox>
+		</Page>
+	</App>
+</mvc:View>
