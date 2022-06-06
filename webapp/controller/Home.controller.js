@@ -17,7 +17,7 @@ sap.ui.define([
 		onInit: function () {
 			this.defaultSettings()
 			this.getStation();
-			setInterval(this.getTrack.bind(this), 7000);
+			
 		},
 
 		getModel: function (sName) {
@@ -45,7 +45,7 @@ sap.ui.define([
 			}).then((data) => {
 				oModel.setProperty("/radio", data.result.stations);
 			})
-			this.getTrack();
+			setInterval(this.getTrack.bind(this), 7000);
 		},
 
 		getTrack: function () {
