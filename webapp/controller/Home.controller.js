@@ -17,7 +17,7 @@ sap.ui.define([
 		onInit: function () {
 			this.defaultSettings()
 			this.getStation();
-			setInterval(this.getTrack.bind(this), 5000);
+			setInterval(this.getTrack.bind(this), 7000);
 		},
 
 		getModel: function (sName) {
