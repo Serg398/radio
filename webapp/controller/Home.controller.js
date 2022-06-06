@@ -106,7 +106,6 @@ sap.ui.define([
 						this.updatePlayer();
 						oModel.setProperty("/statusAudioImg", bPause);
 						oModel.setProperty("/statusAudio", true);
-
 					}
 				});
 			} else {
